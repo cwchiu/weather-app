@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import WeatherApp from "./WeatherApp";
 import "./styles.css";
+import * as serviceWorker from './serviceWorker';
 
 function App() {
   return (
@@ -11,3 +12,4 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+serviceWorker.register()
